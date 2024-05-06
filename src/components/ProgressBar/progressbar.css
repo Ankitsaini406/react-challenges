@@ -1,0 +1,31 @@
+.progress-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.progress-bar {
+    position: relative;
+    height: 2rem;
+    width: 50rem;
+    border-radius: 25px;
+    border: 1px solid black;
+    background-color: rgb(233, 236, 239);
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+
+    span {
+        position: absolute;
+        text-align: center;
+        width: 100%;
+        z-index: 2;
+    }
+}
+
+.progress-bar div {
+    height: 100%;
+    width: 100%;
+    background-color: #00c251;
+}
