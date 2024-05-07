@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Max, Min } from "../const";
-import "./progressbar.css";
+import "../../css/progressbar.css";
 
 const Progressbar = () => {
   const [value, setValue] = useState(0);
