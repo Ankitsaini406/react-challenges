@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
-import "../../css/stpear.css";
+import "../../css/stepper.css";
 import { CheckoutStep } from "../../data/Checkout-step";
 
 const Stpear = () => {
@@ -64,7 +64,7 @@ const Stpear = () => {
             </div>
           );
         })}
-        <div className="progress-bar"
+        <div className="progress--bar"
           style={{
             width: `calc(100% - ${margin.marginLeft + margin.marginRight}px)`,
             marginLeft: margin.marginLeft,

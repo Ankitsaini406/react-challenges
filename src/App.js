@@ -1,13 +1,15 @@
 import './css/App.css';
+import { Routes, Route } from 'react-router-dom';
 import Progressbar from './components/ProgressBar/Progressbar';
-import Stpear from './components/Stpear/Stpear';
+import Stepper from './components/Stepper/Stepper';
 
 function App() {
   return (
-    <div className="App">
-      <Progressbar />
-      <Stpear />
-    </div>
+    <Routes>
+      <Route path='progressbar' element={<Progressbar />} />
+      <Route path='stepper' element={<Stepper />} />
+    </Routes>
+
   );
 }
 
