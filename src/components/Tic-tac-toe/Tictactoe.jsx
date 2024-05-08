@@ -3,7 +3,7 @@ import useTictactoe from "../../hooks/useTictactoe";
 
 const Tictactoe = () => {
 
-    const gridValue = 5;
+    const gridValue = 3;
 
     const { board, handleClick, getStatusMessage, resetGame } =
         useTictactoe(gridValue);
