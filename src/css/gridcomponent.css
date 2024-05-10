@@ -1,0 +1,27 @@
+.wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.grid {
+    display: grid;
+    max-width: 300px;
+    padding: 20px;
+    gap: 20px;
+    border: 1px solid #000;
+    width: 100%;
+}
+
+.cell {
+    background-color: transparent;
+    border: 1px solid #000;
+    height: 0;
+    padding: 0 0 100% 0;
+}
+
+.cell-active {
+    background-color: green;
+}
