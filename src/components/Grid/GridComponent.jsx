@@ -4,6 +4,7 @@ import CellComponent from "./CellComponent";
 
 const GridComponent = () => {
     const [order, setOrder] = useState([]);
+    const [isDeactiveted, setIsDeactiveted] = useState(false);
 
     const gridArray = [
         [1, 1, 1],
@@ -20,7 +21,21 @@ const GridComponent = () => {
         }
     };
 
-    const deactiveteCells = () => { };
+    const deactiveteCells = () => {
+        setIsDeactiveted(true)
+        const timer = setInterval(() => {
+            setOrder((orignOrder) => {
+                const newOrder = orignOrder.slice()
+                newOrder.pop()
+
+                if (newOrder.length === 0) {
+                    clearInterval(timer)
+                    setIsDeactiveted(false)
+                }
+                return newOrder
+            })
+        }, 300);
+    };
 
     return (
         <div className="wrapper">
@@ -34,6 +49,7 @@ const GridComponent = () => {
                             key={index}
                             filled={order.includes(index)}
                             onClick={() => activateCells(index)}
+                            isDisabled={order.includes(index) || isDeactiveted}
                         />
                         :
                         <span></span>

@@ -1,11 +1,11 @@
 import React from 'react'
 
-const CellComponent = ({filled, onClick}) => {
-  return (
-    <button type='button' onClick={onClick} className={filled ? `cell cell-active` : `cell`}>
+const CellComponent = ({ filled, onClick, isDisabled }) => {
+    return (
+        <button type='button' onClick={onClick} disabled={isDisabled} className={filled ? `cell cell-active` : `cell`}>
 
-    </button>
-  )
+        </button>
+    )
 }
 
 export default CellComponent
