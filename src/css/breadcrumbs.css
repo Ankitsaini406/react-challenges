@@ -1,0 +1,16 @@
+.flex-box {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.product-box {
+    border: 1px solid black;
+    padding: 2rem;
+}
+
+.product-img{
+    height: 500px;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+}
