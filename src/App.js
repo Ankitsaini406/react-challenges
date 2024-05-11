@@ -18,7 +18,7 @@ function App() {
       <Route path='tictactoe' element={<Tictactoe />} />
       <Route path='gridcomponent' element={<GridComponent />} />
       <Route path='productlist' element={<Productlist />} />
-      <Route path='productall' element={<Productall />} />
+      <Route path='/productall' element={<Productall />} />
       <Route path='product/:id' element={<Product />} />
     </Routes>
 
