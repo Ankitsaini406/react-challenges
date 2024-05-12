@@ -20,6 +20,7 @@ const Productlist = () => {
             productList.map((product) => {
                 return (
                     <div key={product.id} className="product-box">
+                        <Link to={`/product/${product.id}`}>
                         <div className="product-img">
                             <img className="product-img" src={product.images[0]} alt="" srcSet="" />
                         </div>
@@ -33,6 +34,7 @@ const Productlist = () => {
                                 product.price
                             }
                         </div>
+                        </Link>
                     </div>
                 )
             })
