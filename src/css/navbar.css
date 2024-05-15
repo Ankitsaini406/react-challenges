@@ -44,6 +44,6 @@
     background-color: #fff;
   }
   input:checked + .slider::before{
-    transform: translateX(29px);
+    transform: translateX(31px);
     background-color: #000;
   }
