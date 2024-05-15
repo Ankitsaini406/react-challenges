@@ -9,10 +9,13 @@ import Progressbar from './components/ProgressBar/Progressbar';
 import Stepper from './components/Stepper/Stepper';
 import Tictactoe from './components/Tic-tac-toe/Tictactoe';
 import './css/App.css';
+import Navebar from './Pages/Navebar';
 
 function App() {
   return (
     <div>
+      
+      <Navebar/>
       <Breadcrumbs />
       <Routes>
         <Route path='progressbar' element={<Progressbar />} />
