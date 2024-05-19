@@ -11,6 +11,7 @@ import Stepper from './components/Stepper/Stepper';
 import { ThemeProvider } from './components/ThemeChange/Theme';
 import Tictactoe from './components/Tic-tac-toe/Tictactoe';
 import './css/App.css';
+import TrafficLight from './components/TrafficLight/TrafficLight';
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
           <Route path='productlist' element={<Productlist />} />
           <Route path='productall' element={<Productall />} />
           <Route path='product/:id' element={<Product />} />
+          <Route path='trafficlight' element={<TrafficLight />}/>
         </Routes>
       </ThemeProvider>
     </ >
